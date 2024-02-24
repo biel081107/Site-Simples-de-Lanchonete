@@ -1,0 +1,402 @@
+/*IMPORTAÇÃO DAS FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+/*CONFIGURAÇÕES GLOBAIS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Irish Grover", system-ui;
+    list-style: none;
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+  
+}
+/*HEADER CONFIGURAÇÕES*/
+
+header{
+    width: 100%;
+    height: 9.375rem;
+    background-color: #A61103 ;
+  
+}
+
+/*LOGO CONFIGURAÇÃO*/
+.logo{
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+.logo img{
+    width: 100%;
+}
+
+/*TITULO*/
+
+h1{
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-right: 70px;
+    font-size: 4rem;
+    color: #F29A2E ;
+    font-weight: 400;
+}
+
+/*LINKS NAVS*/
+nav ul{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+nav li a {
+    margin: 1rem 5rem auto;
+    text-decoration: none;
+    color: #fff ;
+    font-size: 1.2rem;
+   
+    
+}
+nav li  a:hover{
+    text-decoration-thickness: 2px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+   
+
+}
+/*FIM CABEÇALHO*/
+
+
+/*INICIO MAIN*/
+#principal{
+    background-color: #fff;
+    width: 100%;
+
+}
+
+/*BANNER*/
+
+#bannerimg{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+/*fim do banner*/
+
+
+/*INICIO HERO(CARDS)*/
+
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.cards{
+    margin: 1rem;
+    background-color: #F67B06;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 5px #0000006b,-3px -3px 5px  #0000004d;
+}
+.cards h2{
+   text-align: center;
+   margin: 0.5rem 0;
+   color: #341B0E;
+   text-transform: uppercase;
+}
+.cards p {
+    padding: 1rem;
+    font-weight: 700;
+    color: #A61103;
+    text-align: center;
+   
+}
+.banner-cards{
+    width: 100%;
+    border-radius:1rem 1rem 0 0;
+   
+}
+
+.cards button{
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    background-color: #A61103;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: border 0.5s;
+    
+}
+.cards a{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem;
+   
+    transition: font-size 0.5s;
+}
+.cards button:hover{
+    
+    border: 5px solid white;
+    
+}
+.cards button a:hover{
+    font-size: 1.5rem;
+
+}
+
+/*FIM DO MAIN*/
+
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 15%;
+    background-color: #A52E00;
+    color: #341B0E;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+#autor{
+    font-size: 1.5rem;
+}
+
+
+
+/*fim do footer*/
+
+/*RESPONSIVIDADE*/
+
+@media only screen and (max-width:800px) and (min-width:665px){
+    .hero{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:665px) and (min-width:600px){
+
+    header h1{
+        font-size: 3rem;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 40%;
+        
+    }
+    .cards p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+
+
+@media only screen and (max-width:600px) and (min-width:550px){
+
+  
+    header h1{
+        font-size: 3rem;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 75%;
+    }
+    .cards img{
+        width: 100%;
+    }
+    .cards p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width:550px) and (min-width:450px){
+
+    header h1{
+        font-size: 2.5rem;
+    }
+     nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav ul li a {
+        text-align: center;
+        margin: 0;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 75%;
+    }
+    .cards img{
+        width: 100%;
+    }
+    .cards p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width:450px) and (min-width:350px){
+    .logo{
+        width: 10%;
+    }
+ 
+    header h1{
+        font-size: 175%;
+    }
+     nav ul li a {
+        font-size: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav ul li a {
+        text-align: center;
+        margin: 0;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 75%;
+    }
+    .cards img{
+        width: 100%;
+    }
+    .cards p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width:350px) and (min-width:300px){
+    .logo{
+        width: 10%;
+    }
+ 
+    header h1{
+        font-size: 175%;
+    }
+    header nav ul li a {
+        font-size: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav ul li a {
+        text-align: center;
+        margin: 0;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 85%;
+    }
+    .cards img{
+        width: 100%;
+    }
+    .cards p {
+        text-align: center;
+        font-size: 100%;
+    }
+
+    footer p{
+        font-size: 100%;
+    }
+    #autor{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .logo{
+        display: none;
+    }
+
+    header h1{
+        font-size: 175%;
+    }
+    header nav ul li a {
+        font-size: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav ul li a {
+        text-align: center;
+        margin: 0;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 90%;
+    }
+    .cards img{
+        width: 100%;
+    }
+    .cards p {
+        text-align: center;
+        font-size: 100%;
+    }
+    .cards button a{
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    footer p{
+        font-size: 100%;
+    }
+    #autor{
+        font-size: 100%;
+    }
+}
